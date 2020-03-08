@@ -1,0 +1,7 @@
+# Ejercicio 1 - Maquetación
+Tras haberle echado un buen rato al ejercicio, creo que a falta de afinar un poco más las fuentes del menú, la imagen obtenida en firefox, chrome y el edge antiguo es prácticamente idéntica al jpg proporcionado. Para manejar los tamaños inferiores a 800px de ancho, únicamente he añadido unas pocas media queries que modifican el tamaño del texto, siendo aceptablemente visible hasta los 320px hasta donde decidí llegar por abajo. Para menor tamaño imagino que habría que modificar el css para hacer un menú "más de móvil".
+
+He optado por hacer la mayor parte del trabajo en local, con mi IDE, para lo cual me he creado un pequeño proyecto de node para estar más cómodo y tener un entorno de trabajo que me falicitase la vida. También he añadido un index.html básico, con algunas ayudas en el mismo para facilitar la labor de estilado, como colocar la imagen como background para, con opacity ver las diferencias, pero también se puede ver en https://codepen.io/eudelvigio/pen/abOVaGq?editors=1100 cómo el scss completo produce el mismo resultado con el html proporcionado para el ejercicio
+Para lanzar el servidor local, sobre este mismo directorio lanzar `npm install`, después `npm run dev` y abrir en un navegador http://localhost:8080
+
+Como conclusión, el ejercicio ha sido interesante y entretenido, y me ha servido para conocer la manera de crear divs que mantengan el ratio mediante el uso de padding-top en su before o after.

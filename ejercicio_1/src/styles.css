@@ -1,0 +1,158 @@
+@charset "UTF-8";
+header,
+section,
+footer {
+  width: 100%;
+  max-width: 800px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff; }
+
+header {
+  height: 32px; }
+  header ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-shadow: 1px 1px #0004; }
+    header ul li {
+      padding: 6px;
+      background-color: #fff; }
+      header ul li a {
+        color: #5988bb;
+        text-decoration: none;
+        white-space: nowrap;
+        font-size: 17px;
+        font-weight: 500; }
+        @media (max-width: 768px) {
+          header ul li a {
+            font-size: 15px; } }
+        @media (max-width: 450px) {
+          header ul li a {
+            font-size: 12px; } }
+        @media (max-width: 360px) {
+          header ul li a {
+            font-size: 10px; } }
+  header > ul > li {
+    border-right: 1px solid #dfe8f2;
+    position: relative; }
+    header > ul > li:nth-child(2) {
+      background-color: #8d96a2; }
+      header > ul > li:nth-child(2) > a {
+        color: #fff; }
+    header > ul > li ul {
+      z-index: 5;
+      position: absolute;
+      flex-flow: column; }
+      header > ul > li ul li {
+        border-top: 1px solid #dfe8f2; }
+        header > ul > li ul li:first-of-type {
+          border-top: none; }
+    header > ul > li > ul {
+      top: 100%;
+      left: 0; }
+      header > ul > li > ul > li {
+        position: relative; }
+        header > ul > li > ul > li:nth-child(2) {
+          background-color: #8d96a2; }
+          header > ul > li > ul > li:nth-child(2) > a {
+            color: #fff; }
+        header > ul > li > ul > li > ul {
+          border-left: 1px solid #dfe8f2;
+          top: 0;
+          left: 100%; }
+          header > ul > li > ul > li > ul > li:nth-child(3) {
+            background-color: #8d96a2; }
+            header > ul > li > ul > li > ul > li:nth-child(3) > a {
+              color: #fff; }
+
+section {
+  height: calc(100% - 32px - 66px); }
+  section div.proportion-16-9 {
+    display: flex;
+    background: #618ebe;
+    background: linear-gradient(315deg, #618ebe 0%, #5988bb 50%, #618ebe 50%, #5988bb 100%);
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+    section div.proportion-16-9::after {
+      content: "";
+      display: block;
+      padding-top: 56.25%; }
+    section div.proportion-16-9 div {
+      top: calc(50% - 230px);
+      width: calc(100% - 100px);
+      text-align: center;
+      padding: 13px 0;
+      margin: 20px;
+      border-radius: 10px;
+      border: 8px solid #7fa2ca;
+      background-color: #b5c9e0;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      font-weight: 300;
+      position: relative; }
+      @media (max-width: 768px) {
+        section div.proportion-16-9 div {
+          font-size: 15px; } }
+      @media (max-width: 450px) {
+        section div.proportion-16-9 div {
+          font-size: 12px; } }
+      @media (max-width: 360px) {
+        section div.proportion-16-9 div {
+          font-size: 10px; } }
+      section div.proportion-16-9 div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 5px 1px #6666;
+        border-radius: 3px; }
+  section blockquote {
+    margin: 17px 0px 100px;
+    border-left: 3px solid #bdcfe5;
+    padding: 0 16px;
+    line-height: 24px;
+    font-size: 16px; }
+    section blockquote::before {
+      color: #bdcfe5;
+      content: "“";
+      font-size: 36px;
+      line-height: 20px;
+      margin-right: 7px; }
+    section blockquote::after {
+      color: #bdcfe5;
+      content: "”";
+      font-size: 36px;
+      line-height: 20px;
+      position: absolute;
+      padding-top: 7px;
+      padding-left: 7px; }
+    @media (max-width: 768px) {
+      section blockquote {
+        font-size: 15px; } }
+    @media (max-width: 450px) {
+      section blockquote {
+        font-size: 12px; } }
+    @media (max-width: 360px) {
+      section blockquote {
+        font-size: 10px; } }
+
+footer {
+  height: 66px;
+  border-top: 4px solid #bdcfe5;
+  display: flex; }
+  footer a {
+    text-align: center;
+    color: #5988bb;
+    margin: 24px auto;
+    text-decoration: none;
+    border-bottom: 1px dotted #5988bb; }

@@ -1,0 +1,20 @@
+{
+  "name": "ejercicio_1",
+  "version": "1.0.0",
+  "description": "Ejercicio 1 maquetación",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass src/styles.scss > src/styles.css",
+    "dev": "nodemon -e scss --exec npm run serve ",
+    "server": "http-server ./src/",
+    "serve": "run-p build server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

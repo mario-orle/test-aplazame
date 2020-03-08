@@ -1,0 +1,50 @@
+@charset "UTF-8";
+a {
+  margin: 0 auto;
+  display: block;
+  width: 260px;
+  height: 74px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  box-shadow: 0px 0px 0px 2px #666666;
+  background: linear-gradient(180deg, #e3e3e3 0%, #d2d2d2 50%, #c7c7c7 50%, #aeaeae 100%); }
+  a::after {
+    content: "★";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 8px solid #cbcbcb;
+    text-align: right;
+    line-height: 54px;
+    color: #888;
+    padding-right: 15px;
+    font-size: 32px;
+    font-weight: 100; }
+  a::before {
+    content: "★";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px #616161;
+    z-index: 2;
+    line-height: 54px;
+    text-align: left;
+    color: #888;
+    padding-left: 18px;
+    font-size: 32px;
+    font-weight: 100; }

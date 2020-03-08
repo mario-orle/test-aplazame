@@ -1,0 +1,14 @@
+header,
+section,
+footer {
+  width: 100%;
+  max-width: 800px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+@import "components/header.scss";
+@import "components/section.scss";
+@import "components/footer.scss";

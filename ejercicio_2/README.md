@@ -1,0 +1,5 @@
+# Ejercicio 2 - Maquetación
+En este ejercicio he procurado hacer uso todo lo posible de scss puro, sin uso de imágenes para mostrar el botón. Me ha llevado menos tiempo tenerlo entregable, dado que es bastante menos trabajo, y además no he trabajado el responsive del botón, seteando una width y height fija, pensando que no estaba dentro del alcance del ejercicio. La fuente tampoco he conseguido clavarla al 100%, pero sí las estrellas, y me ha servido para recordar el box shadow, los befores y los afters.
+
+Al igual que en el anterior ejercicio, me he creado un pequeño proyecto igual al primero, con su index.html con algunas ayudas para facilitar la vida. En este link de codepen, https://codepen.io/eudelvigio/pen/abOVaGq?editors=1100, se ve cómo con el html dado se ve el botón solicitado. 
+Para lanzar el servidor local, sobre este mismo directorio lanzar `npm install`, después `npm run dev` y abrir en un navegador http://localhost:8080
