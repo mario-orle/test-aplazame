@@ -1,5 +1,6 @@
 # Ejercicio 3 - JavaScript
-Para el ejercicio del vector he creado el fichero src/index.js donde se implementa a partir del prototype de Array, de manera que se cumpla con que los objetos sean instancias tanto de Vector como de Array. 
-Al hacer uso del prototype de Array, he aprovechado que Array ya es capaz de almacenar los elementos, y además proporciona ciertos métodos para hacer más legible el código. No me ha parecido necesario comentar el código, dada la facilidad del mismo, incluso siguiendo la premisa del uso de ES5.
+Para el ejercicio del vector he creado el fichero src/index.js donde se implementa a partir del prototype de Array, de manera que se cumpla con que los objetos sean instancias tanto de Vector como de Array.
+Al hacer uso del prototype de Array, he aprovechado que Array ya es capaz de almacenar los elementos, y además proporciona ciertos métodos para hacer más legible el código. Para cumplir con que el vector se construyese con un array hago uso del método push dado por su prototipo, con el que añado los elementos recorriendo el parámetro en el constructor.
+No me ha parecido necesario comentar el código, dada la facilidad del mismo, incluso siguiendo la premisa del uso de ES5.
 
 He creado una serie de tests para confirmar el funcionamiento correcto del desarrollo, algunas siguiendo lo descrito en el enunciado, y otras que he creído necesarias para asegurar que el código funciona bien. He instalado Jest en el proyecto para poder ejecutarlos con `npm run test` tras hacer `npm install`
